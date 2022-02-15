@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="56.534">
+    <testcase classname="Search Hotel" name="Fill all the required details on trivago homepage" time="22.622">
+        <system-out>
+            <![CDATA[Given User is on trivago homepage...........................................passed
+When User enters destination................................................passed
+And Enters checkIn checkOut details.........................................passed
+And select rooms and guest details..........................................passed
+And Click on search button..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search Hotel" name="Apply all filters on hotel's list page" time="32.158">
+        <system-out>
+            <![CDATA[When Property type is hotel.................................................passed
+And Guest rating is excellent...............................................passed
+And Hotel class is three star...............................................passed
+And Which have free cancelletion facility...................................passed
+And Free breakfast..........................................................passed
+And Is family friendly......................................................passed
+And Sorted by rating and recommended........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search Hotel" name="Select the top hotel in the list" time="1.283">
+        <system-out>
+            <![CDATA[When The name of hotel and cost displayed...................................passed
+And User is redirected to hotel's website for checkout......................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
