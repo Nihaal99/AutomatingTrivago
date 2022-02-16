@@ -1,10 +1,12 @@
 //JUnit Runner file
 package cucumberOptions;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
-@RunWith(Cucumber.class)
+
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+//@RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/Feature",
         glue = "stepDefination",
@@ -19,6 +21,12 @@ import org.junit.runner.RunWith;
         publish = true
 
 )
-public class testRunner {
+/*
+*@RunWith(Cucumber.class) will run runner class as JUnit test
+*For using runner file as testNG we need to comment JUnit from runner file(eg.In line 8)
+*We need to extend testRunner as below
+* Also import @CucumberOptions related to testNG
+*/
+public class testRunner extends AbstractTestNGCucumberTests {
 
 }

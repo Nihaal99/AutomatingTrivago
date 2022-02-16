@@ -20,6 +20,7 @@ Feature: Search Hotel
 Scenario: Select the top hotel in the list
   When The name of hotel and cost displayed
   And User is redirected to hotel's website for checkout
+  And Quit Browser
 
 
 

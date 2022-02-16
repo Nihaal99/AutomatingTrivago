@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="56.534">
-    <testcase classname="Search Hotel" name="Fill all the required details on trivago homepage" time="22.622">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="58.092">
+    <testcase classname="Search Hotel" name="Fill all the required details on trivago homepage" time="21.259">
         <system-out>
             <![CDATA[Given User is on trivago homepage...........................................passed
 When User enters destination................................................passed
@@ -10,7 +10,7 @@ And Click on search button..................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Search Hotel" name="Apply all filters on hotel's list page" time="32.158">
+    <testcase classname="Search Hotel" name="Apply all filters on hotel's list page" time="30.235">
         <system-out>
             <![CDATA[When Property type is hotel.................................................passed
 And Guest rating is excellent...............................................passed
@@ -22,10 +22,11 @@ And Sorted by rating and recommended........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Search Hotel" name="Select the top hotel in the list" time="1.283">
+    <testcase classname="Search Hotel" name="Select the top hotel in the list" time="6.323">
         <system-out>
             <![CDATA[When The name of hotel and cost displayed...................................passed
 And User is redirected to hotel's website for checkout......................passed
+And Quit Browser............................................................passed
 ]]>
         </system-out>
     </testcase>
