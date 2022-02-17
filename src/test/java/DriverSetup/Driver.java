@@ -65,11 +65,11 @@ public class Driver{
         // sourceFile stores the file in binary format.
         File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
         // For storing file in file format,file is saved in destFile.
-        File destFile = new File(System.getProperty("user.dir") + "\\Screenshots" + DateUtils.getTimeStamp() + ".png");
+        File destFile = new File(System.getProperty("user.dir")+"\\Screenshots\\"+ DateUtils.getTimeStamp() + ".png");
         try {
             FileUtils.copyFile(sourceFile, destFile);
             logger.addScreenCaptureFromPath(
-                    System.getProperty("user.dir"+ "\\Screenshots") + DateUtils.getTimeStamp() + ".png");
+                    System.getProperty("user.dir")+"\\Screenshots\\"+ DateUtils.getTimeStamp() + ".png");
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
