@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.trivago.automation.api.tests.HotelsAPITest" time="21.042" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\csp\Desktop\Projects\AutomatingTrivago\target\test-classes;C:\Users\csp\Desktop\Projects\AutomatingTrivago\target\classes;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\csp\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\csp\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\csp\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\csp\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\csp\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\csp\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\csp\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\csp\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\csp\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\csp\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\csp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-picocontainer\7.14.0\cucumber-picocontainer-7.14.0.jar;C:\Users\csp\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\csp\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\csp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\csp\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\csp\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\csp\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\csp\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\csp\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\csp\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\csp\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.21.1\log4j-slf4j-impl-2.21.1.jar;C:\Users\csp\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\csp\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\csp\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\csp\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\csp\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\csp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\csp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\csp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\csp\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\csp\.m2\repository\org\assertj\assertj-core\3.24.1\assertj-core-3.24.1.jar;C:\Users\csp\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\csp\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\csp\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\csp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\csp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.21.1\log4j-slf4j2-impl-2.21.1.jar;C:\Users\csp\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\csp\.m2\repository\com\github\tomakehurst\wiremock-jre8\2.35.0\wiremock-jre8-2.35.0.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-server\9.4.49.v20220914\jetty-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-http\9.4.49.v20220914\jetty-http-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-io\9.4.49.v20220914\jetty-io-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.49.v20220914\jetty-servlet-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-security\9.4.49.v20220914\jetty-security-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.49.v20220914\jetty-util-ajax-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-servlets\9.4.49.v20220914\jetty-servlets-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-continuation\9.4.49.v20220914\jetty-continuation-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-util\9.4.49.v20220914\jetty-util-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-webapp\9.4.49.v20220914\jetty-webapp-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.49.v20220914\jetty-xml-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-proxy\9.4.49.v20220914\jetty-proxy-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-client\9.4.49.v20220914\jetty-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-server\9.4.49.v20220914\http2-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-common\9.4.49.v20220914\http2-common-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-hpack\9.4.49.v20220914\http2-hpack-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-server\9.4.49.v20220914\jetty-alpn-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-java-server\9.4.49.v20220914\jetty-alpn-java-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-server\9.4.49.v20220914\jetty-alpn-openjdk8-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-java-client\9.4.49.v20220914\jetty-alpn-java-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-client\9.4.49.v20220914\jetty-alpn-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-client\9.4.49.v20220914\jetty-alpn-openjdk8-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\csp\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\csp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\csp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\csp\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\csp\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\csp\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4.2\jackson-databind-2.13.4.2.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\csp\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\csp\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-legacy\2.9.0\xmlunit-legacy-2.9.0.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-placeholders\2.9.0\xmlunit-placeholders-2.9.0.jar;C:\Users\csp\.m2\repository\net\javacrumbs\json-unit\json-unit-core\2.36.0\json-unit-core-2.36.0.jar;C:\Users\csp\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\csp\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\csp\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\csp\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\csp\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\csp\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\csp\.m2\repository\com\github\jknack\handlebars\4.3.1\handlebars-4.3.1.jar;C:\Users\csp\.m2\repository\com\github\jknack\handlebars-helpers\4.3.1\handlebars-helpers-4.3.1.jar;C:\Users\csp\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\csp\AppData\Local\Temp\surefire16827577622089467810\surefirebooter-20260304102702767_3.jar C:\Users\csp\AppData\Local\Temp\surefire16827577622089467810 2026-03-04T10-27-02_279-jvmRun1 surefire-20260304102702767_1tmp surefire_0-20260304102702767_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="HotelsAPITest"/>
+    <property name="surefire.test.class.path" value="C:\Users\csp\Desktop\Projects\AutomatingTrivago\target\test-classes;C:\Users\csp\Desktop\Projects\AutomatingTrivago\target\classes;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\csp\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\csp\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\csp\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\csp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\csp\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\csp\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\csp\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\csp\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\csp\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\csp\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\csp\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\csp\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\csp\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\csp\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\csp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\csp\.m2\repository\io\cucumber\cucumber-picocontainer\7.14.0\cucumber-picocontainer-7.14.0.jar;C:\Users\csp\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\csp\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\csp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\csp\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\csp\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\csp\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\csp\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\csp\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\csp\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\csp\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\csp\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.21.1\log4j-slf4j-impl-2.21.1.jar;C:\Users\csp\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\csp\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\csp\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\csp\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\csp\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\csp\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\csp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\csp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\csp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\csp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\csp\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\csp\.m2\repository\org\assertj\assertj-core\3.24.1\assertj-core-3.24.1.jar;C:\Users\csp\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\csp\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\csp\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\csp\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\csp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\csp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\csp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\csp\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.21.1\log4j-slf4j2-impl-2.21.1.jar;C:\Users\csp\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\csp\.m2\repository\com\github\tomakehurst\wiremock-jre8\2.35.0\wiremock-jre8-2.35.0.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-server\9.4.49.v20220914\jetty-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-http\9.4.49.v20220914\jetty-http-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-io\9.4.49.v20220914\jetty-io-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.49.v20220914\jetty-servlet-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-security\9.4.49.v20220914\jetty-security-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.49.v20220914\jetty-util-ajax-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-servlets\9.4.49.v20220914\jetty-servlets-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-continuation\9.4.49.v20220914\jetty-continuation-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-util\9.4.49.v20220914\jetty-util-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-webapp\9.4.49.v20220914\jetty-webapp-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.49.v20220914\jetty-xml-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-proxy\9.4.49.v20220914\jetty-proxy-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-client\9.4.49.v20220914\jetty-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-server\9.4.49.v20220914\http2-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-common\9.4.49.v20220914\http2-common-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\http2\http2-hpack\9.4.49.v20220914\http2-hpack-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-server\9.4.49.v20220914\jetty-alpn-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-java-server\9.4.49.v20220914\jetty-alpn-java-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-server\9.4.49.v20220914\jetty-alpn-openjdk8-server-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-java-client\9.4.49.v20220914\jetty-alpn-java-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-client\9.4.49.v20220914\jetty-alpn-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\org\eclipse\jetty\jetty-alpn-openjdk8-client\9.4.49.v20220914\jetty-alpn-openjdk8-client-9.4.49.v20220914.jar;C:\Users\csp\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\csp\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\csp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\csp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\csp\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\csp\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\csp\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\csp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4.2\jackson-databind-2.13.4.2.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\csp\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\csp\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-legacy\2.9.0\xmlunit-legacy-2.9.0.jar;C:\Users\csp\.m2\repository\org\xmlunit\xmlunit-placeholders\2.9.0\xmlunit-placeholders-2.9.0.jar;C:\Users\csp\.m2\repository\net\javacrumbs\json-unit\json-unit-core\2.36.0\json-unit-core-2.36.0.jar;C:\Users\csp\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\csp\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\csp\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\csp\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\csp\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\csp\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\csp\.m2\repository\com\github\jknack\handlebars\4.3.1\handlebars-4.3.1.jar;C:\Users\csp\.m2\repository\com\github\jknack\handlebars-helpers\4.3.1\handlebars-helpers-4.3.1.jar;C:\Users\csp\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\csp"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\csp\Desktop\Projects\AutomatingTrivago"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\csp\AppData\Local\Temp\surefire16827577622089467810\surefirebooter-20260304102702767_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="org.eclipse.jetty.http.HttpGenerator.STRICT" value="true"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="csp"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\csp\.m2\repository"/>
+    <property name="javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom" value="com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="jetty.git.hash" value="4231a3b2e4cb8548a412a789936d640a97b1aa0a"/>
+    <property name="java.io.tmpdir" value="C:\Users\csp\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="C:\Users\csp\Desktop\Projects\AutomatingTrivago"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\Java11\jdk-11.0.22\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\csp\Desktop\Maven\apache-maven-3.8.4\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Sublime Text;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\nodejs;C:\Users\csp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.2\bin;;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="javax.xml.transform.TransformerFactory" value="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateBookingWithValidData" classname="com.trivago.automation.api.tests.HotelsAPITest" time="13.187">
+    <system-out><![CDATA[WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+10:27:07.051 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+
+10:27:07.063 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ╔════════════════════════════════════════════════════════╗
+10:27:07.064 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ║         STARTING TRIVAGO API TESTS WITH MOCK SERVER    ║
+10:27:07.065 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ╚════════════════════════════════════════════════════════╝
+10:27:08.337 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5011ms to org.eclipse.jetty.util.log.Slf4jLog
+10:27:09.176 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 17.0.8+9-LTS-211
+10:27:09.219 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15f2eda3{/__admin,null,AVAILABLE}
+10:27:09.246 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+10:27:09.246 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5e8c34a0{/,null,AVAILABLE}
+10:27:09.346 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@7c8326a4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+10:27:09.347 [main] INFO  org.eclipse.jetty.server.Server - Started @6025ms
+10:27:09.347 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ════════════════════════════════════════════════════════
+10:27:09.348 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ MOCK API SERVER STARTED
+10:27:09.348 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ════════════════════════════════════════════════════════
+10:27:09.348 [main] INFO  com.trivago.automation.api.mock.MockApiServer - Base URL: http://localhost:8080
+10:27:09.349 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ════════════════════════════════════════════════════════
+10:27:09.349 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ────────────────────────────────────────────────────────
+10:27:09.349 [main] INFO  com.trivago.automation.api.mock.MockApiServer - SETTING UP MOCK ENDPOINTS
+10:27:09.349 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ────────────────────────────────────────────────────────
+10:27:09.431 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: GET /v1/hotels/search → 200 OK (5 hotels)
+10:27:09.434 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: GET /v1/hotels/filter → 200 OK (filtered results)
+10:27:09.435 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: POST /v1/bookings → 201 Created (booking confirmed)
+10:27:09.436 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: GET /v1/hotels/sort → 200 OK (sorted by rating)
+10:27:09.437 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: GET /v1/hotels/{id} → 200 OK (hotel details)
+10:27:09.446 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ Mocked: GET /v1/hotels/search (missing params) → 400 Bad Request
+10:27:09.447 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ────────────────────────────────────────────────────────
+10:27:09.447 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ✓ ALL MOCK ENDPOINTS CONFIGURED
+10:27:09.447 [main] INFO  com.trivago.automation.api.mock.MockApiServer - ────────────────────────────────────────────────────────
+10:27:09.448 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+10:27:09.451 [main] INFO  com.trivago.automation.api.utils.APIConfig - ✓ API Configuration loaded from application.properties
+10:27:09.451 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.452 [main] INFO  com.trivago.automation.api.utils.APIConfig - API CONFIGURATION (from application.properties)
+10:27:09.452 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.452 [main] INFO  com.trivago.automation.api.utils.APIConfig - Base URL: http://localhost:8080
+10:27:09.452 [main] INFO  com.trivago.automation.api.utils.APIConfig - API Version: v1
+10:27:09.453 [main] INFO  com.trivago.automation.api.utils.APIConfig - Timeout: 10000 ms
+10:27:09.453 [main] INFO  com.trivago.automation.api.utils.APIConfig - Connection Timeout: 5000 ms
+10:27:09.453 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.453 [main] INFO  com.trivago.automation.api.utils.APIConfig - ENDPOINTS
+10:27:09.454 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.454 [main] INFO  com.trivago.automation.api.utils.APIConfig - Search: /hotels/search
+10:27:09.454 [main] INFO  com.trivago.automation.api.utils.APIConfig - Hotels: /hotels
+10:27:09.454 [main] INFO  com.trivago.automation.api.utils.APIConfig - Filter: /hotels/filter
+10:27:09.455 [main] INFO  com.trivago.automation.api.utils.APIConfig - Sort: /hotels/sort
+10:27:09.455 [main] INFO  com.trivago.automation.api.utils.APIConfig - Bookings: /bookings
+10:27:09.455 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.455 [main] INFO  com.trivago.automation.api.utils.APIConfig - TEST DATA
+10:27:09.455 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.456 [main] INFO  com.trivago.automation.api.utils.APIConfig - Destination: Paris
+10:27:09.456 [main] INFO  com.trivago.automation.api.utils.APIConfig - Check-in: 2024-03-10
+10:27:09.456 [main] INFO  com.trivago.automation.api.utils.APIConfig - Check-out: 2024-03-15
+10:27:09.456 [main] INFO  com.trivago.automation.api.utils.APIConfig - Adults: 2
+10:27:09.457 [main] INFO  com.trivago.automation.api.utils.APIConfig - Children: 1
+10:27:09.457 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.457 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.457 [main] INFO  com.trivago.automation.api.utils.APIConfig - API CONFIGURATION (from application.properties)
+10:27:09.458 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.458 [main] INFO  com.trivago.automation.api.utils.APIConfig - Base URL: http://localhost:8080
+10:27:09.458 [main] INFO  com.trivago.automation.api.utils.APIConfig - API Version: v1
+10:27:09.459 [main] INFO  com.trivago.automation.api.utils.APIConfig - Timeout: 10000 ms
+10:27:09.459 [main] INFO  com.trivago.automation.api.utils.APIConfig - Connection Timeout: 5000 ms
+10:27:09.459 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.459 [main] INFO  com.trivago.automation.api.utils.APIConfig - ENDPOINTS
+10:27:09.459 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.460 [main] INFO  com.trivago.automation.api.utils.APIConfig - Search: /hotels/search
+10:27:09.460 [main] INFO  com.trivago.automation.api.utils.APIConfig - Hotels: /hotels
+10:27:09.460 [main] INFO  com.trivago.automation.api.utils.APIConfig - Filter: /hotels/filter
+10:27:09.460 [main] INFO  com.trivago.automation.api.utils.APIConfig - Sort: /hotels/sort
+10:27:09.460 [main] INFO  com.trivago.automation.api.utils.APIConfig - Bookings: /bookings
+10:27:09.461 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.461 [main] INFO  com.trivago.automation.api.utils.APIConfig - TEST DATA
+10:27:09.461 [main] INFO  com.trivago.automation.api.utils.APIConfig - ─────────────────────────────────────────────────────
+10:27:09.461 [main] INFO  com.trivago.automation.api.utils.APIConfig - Destination: Paris
+10:27:09.461 [main] INFO  com.trivago.automation.api.utils.APIConfig - Check-in: 2024-03-10
+10:27:09.462 [main] INFO  com.trivago.automation.api.utils.APIConfig - Check-out: 2024-03-15
+10:27:09.462 [main] INFO  com.trivago.automation.api.utils.APIConfig - Adults: 2
+10:27:09.462 [main] INFO  com.trivago.automation.api.utils.APIConfig - Children: 1
+10:27:09.462 [main] INFO  com.trivago.automation.api.utils.APIConfig - ════════════════════════════════════════════════════════
+10:27:09.533 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 8: Create booking with valid data ---
+10:27:09.552 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - POST Request to: http://localhost:8080/v1/bookings
+10:27:09.553 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Request Body: {
+  "hotelId": 123,
+  "destination": "Paris",
+  "checkIn": "2024-03-10",
+  "checkOut": "2024-03-15",
+  "guests": {
+    "adults": 2,
+    "children": 1
+  }
+}
+10:27:20.460 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 201
+10:27:20.467 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Status code is 201 (Booking created)
+10:27:22.648 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Booking ID: BK12345678
+]]></system-out>
+  </testcase>
+  <testcase name="testFilterByMultipleAmenities" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.572">
+    <system-out><![CDATA[10:27:22.683 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 7: Filter by multiple amenities ---
+10:27:22.685 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/filter
+10:27:22.685 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:22.686 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: amenities = WiFi,Pool,Gym
+10:27:23.250 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:23.251 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Amenities filter applied
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateBookingWithMissingFields" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.044">
+    <system-out><![CDATA[10:27:23.258 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 9: Create booking with missing fields ---
+10:27:23.259 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - POST Request to: http://localhost:8080/v1/bookings
+10:27:23.259 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Request Body: {
+  "destination": "Paris",
+  "checkIn": "2024-03-10"
+}
+10:27:23.298 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 400
+10:27:23.299 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Returns 400 (error as expected)
+]]></system-out>
+  </testcase>
+  <testcase name="testFilterByPriceRange" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.533">
+    <system-out><![CDATA[10:27:23.304 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 6: Filter by price range ---
+10:27:23.305 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/filter
+10:27:23.306 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:23.306 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:23.306 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:23.307 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: priceMin = 100
+10:27:23.307 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: priceMax = 200
+10:27:23.763 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:23.764 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Price range filter applied
+10:27:23.833 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ All 2 hotels within price range
+]]></system-out>
+  </testcase>
+  <testcase name="testHotelObjectStructure" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.843">
+    <system-out><![CDATA[10:27:23.841 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 12: Verify hotel object structure ---
+10:27:23.841 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:23.841 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:23.841 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:23.842 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:24.381 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:24.680 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ All required hotel fields present
+10:27:24.680 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   ID: 1, Name: Hilton Paris, Price: 150.0, Rating: 4.5
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithMissingParameters" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.045">
+    <system-out><![CDATA[10:27:24.686 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 2: Search with missing parameters ---
+10:27:24.687 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:24.687 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:24.687 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:24.726 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 400
+10:27:24.727 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Returns 400 (error response as expected)
+]]></system-out>
+  </testcase>
+  <testcase name="testFilterByRating" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.496">
+    <system-out><![CDATA[10:27:24.732 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 5: Filter by rating ---
+10:27:24.733 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/filter
+10:27:24.734 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:24.735 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:24.735 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:24.736 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: rating = 4.5
+10:27:25.191 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:25.192 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Filter request successful
+10:27:25.225 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ All 2 hotels have rating >= 4.5
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateBookingWithInvalidDates" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.052">
+    <system-out><![CDATA[10:27:25.230 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 10: Create booking with invalid dates ---
+10:27:25.231 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - POST Request to: http://localhost:8080/v1/bookings
+10:27:25.231 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Request Body: {
+  "hotelId": 123,
+  "checkIn": "2024-03-15",
+  "checkOut": "2024-03-10",
+  "guests": { "adults": 2 }
+}
+10:27:25.279 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 400
+10:27:25.280 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Invalid dates rejected with status: 400
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithInvalidDateFormat" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.044">
+    <system-out><![CDATA[10:27:25.285 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 3: Search with invalid date format ---
+10:27:25.286 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:25.286 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:25.287 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = invalid-date
+10:27:25.287 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:25.325 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 400
+10:27:25.325 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Returns 400 for invalid date
+]]></system-out>
+  </testcase>
+  <testcase name="testResponseJSONStructure" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.622">
+    <system-out><![CDATA[10:27:25.330 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 11: Verify response JSON structure ---
+10:27:25.331 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:25.331 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:25.332 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:25.332 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:25.876 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:25.949 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ JSON structure is valid
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithPastDates" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.052">
+    <system-out><![CDATA[10:27:25.955 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 4: Search with past dates ---
+10:27:25.956 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:25.956 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:25.957 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2020-01-01
+10:27:25.957 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2020-01-10
+10:27:26.000 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 400
+10:27:26.004 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Past dates rejected with status: 400
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchHotelsWithValidParameters" classname="com.trivago.automation.api.tests.HotelsAPITest" time="0.62">
+    <system-out><![CDATA[10:27:26.009 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - 
+--- TEST 1: Search with valid parameters ---
+10:27:26.010 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - GET Request to: http://localhost:8080/v1/hotels/search
+10:27:26.011 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: destination = Paris
+10:27:26.011 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkIn = 2024-03-10
+10:27:26.011 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: checkOut = 2024-03-15
+10:27:26.012 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: adults = 2
+10:27:26.012 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest -   Param: children = 1
+10:27:26.571 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - Response Status: 200
+10:27:26.571 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Status code is 200
+10:27:26.599 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Found 5 hotels
+10:27:26.626 [main] INFO  com.trivago.automation.api.tests.HotelsAPITest - ✓ Response has status field
+]]></system-out>
+  </testcase>
+</testsuite>

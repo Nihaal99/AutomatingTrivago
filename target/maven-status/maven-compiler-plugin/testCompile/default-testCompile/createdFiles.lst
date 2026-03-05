@@ -1,0 +1,16 @@
+com\trivago\automation\utilities\ScreenshotUtils.class
+com\trivago\automation\api\tests\HotelsAPITest.class
+com\trivago\automation\driver\WebDriverFactory.class
+com\trivago\automation\pages\BasePage.class
+com\trivago\automation\runner\TestRunner.class
+com\trivago\automation\api\utils\APIConfig.class
+com\trivago\automation\stepdefinitions\SearchHotelSteps.class
+com\trivago\automation\driver\DriverContext.class
+com\trivago\automation\pages\HotelsListPage.class
+com\trivago\automation\stepdefinitions\ApplyFiltersSteps.class
+com\trivago\automation\config\ConfigProperties.class
+com\trivago\automation\pages\TrivagoHomePage.class
+com\trivago\automation\api\mock\MockApiServer.class
+com\trivago\automation\hooks\Hooks.class
+com\trivago\automation\stepdefinitions\SelectHotelSteps.class
+com\trivago\automation\utilities\WaitUtils.class
