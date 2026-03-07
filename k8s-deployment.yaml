@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trivago-tests
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trivago-tests
+  template:
+    metadata:
+      labels:
+        app: trivago-tests
+    spec:
+      containers:
+        - name: trivago-tests
+          image: trivago-automation
+          imagePullPolicy: Never
